@@ -5,6 +5,7 @@ This project containes a minimal setup for developing a performant and well stru
 ## Good to know before using:
 * [React](https://reactjs.org/)
 * [Redux](https://redux.js.org/)
+* [Webext-redux](https://github.com/tshaddix/webext-redux)
 * [Typescript](https://www.typescriptlang.org/)
 * [Styled-components](https://www.styled-components.com/)
 * [Extensions](https://developer.chrome.com/extensions)
@@ -13,6 +14,10 @@ This project containes a minimal setup for developing a performant and well stru
 * [NodeJS](https://nodejs.org/en/) - Javascript runtime
 * [VSCode](https://code.visualstudio.com/) - Recomended editor
 * [Chrome](https://www.google.com/chrome/) or [Firefox](https://www.mozilla.org/en-US/firefox/) - Web browser
+
+## How does proxy store work here:
+![Architecture](https://cloud.githubusercontent.com/assets/603426/18599404/329ca9ca-7c0d-11e6-9a02-5718a0fba8db.png)
+
 
 ## How to run:
 ### In terminal or command prompt
