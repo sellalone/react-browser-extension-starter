@@ -1,0 +1,64 @@
+{
+  "extends": [
+    "plugin:prettier/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off",
+    "indent": "off",
+    "react/jsx-wrap-multilines": "off",
+    "no-trailing-spaces": "off",
+    "no-param-reassign": "off",
+    "react/jsx-filename-extension": [2, {
+      "extensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx"
+      ]
+    }],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "camelcase": "off",
+    "@typescript-eslint/camelcase": "off",
+    "react/jsx-curly-newline" : "off",
+    "object-curly-newline": "off",
+    "arrow-parens": "off",
+    "function-paren-newline": "off",
+    "import/extensions": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-var-requires":  "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      {
+        "prefixWithI": "always"
+      }
+    ]
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "chrome":true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js",".jsx",".tsx", ".ts"]
+      }
+    }
+  }
+}

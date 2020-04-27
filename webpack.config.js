@@ -32,15 +32,22 @@ const extensionReloader =
 module.exports = {
   watch: nodeEnv === 'watch',
   entry: {
-    background: path.join(sourceRootPath, 'main', 'background', 'index.ts'),
-    options: path.join(sourceRootPath, 'main', 'options', 'index.tsx'),
-    popup: path.join(sourceRootPath, 'main', 'popup', 'index.tsx'),
-    'content-script': path.join(
-      sourceRootPath,
-      'main',
-      'contentScript',
-      'index.tsx'
-    ),
+    background: [
+      '@babel/polyfill',
+      path.join(sourceRootPath, 'pages', 'background', 'index.ts'),
+    ],
+    options: [
+      '@babel/polyfill',
+      path.join(sourceRootPath, 'pages', 'options', 'index.tsx'),
+    ],
+    popup: [
+      '@babel/polyfill',
+      path.join(sourceRootPath, 'pages', 'popup', 'index.tsx'),
+    ],
+    'content-script': [
+      '@babel/polyfill',
+      path.join(sourceRootPath, 'pages', 'contentScript', 'index.tsx'),
+    ],
   },
   output: {
     path: distRootPath,
