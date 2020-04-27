@@ -5,7 +5,7 @@ import { Store } from 'webext-redux';
 import { OptionsAppContainer } from './container';
 
 // Create proxy store
-const store = new Store();
+const store = new Store({ portName: 'my-project' });
 
 // wait for the store to connect to the background page
 store.ready().then(() => {

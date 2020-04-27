@@ -10,7 +10,7 @@ import { createDomAnchor } from '../../utils/index';
 createDomAnchor('content-script-root');
 
 // Create proxy store
-const store = new Store();
+const store = new Store({ portName: 'my-project' });
 
 // wait for the store to connect to the background page
 store.ready().then(() => {

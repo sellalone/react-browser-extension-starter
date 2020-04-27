@@ -11,4 +11,6 @@ const store = createStore(reducers, preloadedState);
 configureApp(store);
 
 // Connect store with proxy stores in UI pages
-wrapStore(store);
+wrapStore(store, {
+  portName: 'my-project',
+});
